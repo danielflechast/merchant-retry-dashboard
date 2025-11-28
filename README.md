@@ -1,88 +1,92 @@
 # RetryFlow - Merchant Retry Dashboard
 
-Dashboard interactivo para configurar reglas de reintento de pagos y visualizar el impacto en tiempo real.
+Interactive dashboard for configuring payment retry rules and visualizing real-time impact.
 
-## 🚀 Instalación y Ejecución
+## 🚀 Installation & Setup
 
-### Prerrequisitos
-- **Node.js** versión 16 o superior ([Descargar aquí](https://nodejs.org/))
-- npm (viene incluido con Node.js)
+### Prerequisites
+- **Node.js** version 16 or higher (Download: https://nodejs.org/)
+- npm (included with Node.js)
 
-### Pasos para ejecutar en otra PC
+### Steps to run on another PC
 
-1. **Copiar el proyecto**
-   - Comprime toda la carpeta `merchant-retry-dashboard`
-   - **IMPORTANTE**: Puedes excluir la carpeta `node_modules` para que sea más ligero (se volverá a crear)
-   - Transfiere el archivo a la otra PC y descomprime
+1. **Copy the project**
+   - Compress the entire `merchant-retry-dashboard` folder
+   - IMPORTANT: You may exclude the `node_modules` folder to reduce file size (it will be recreated)
+   - Transfer the compressed file to the other PC and unzip it
 
-2. **Instalar dependencias**
-   ```bash
-   cd merchant-retry-dashboard
-   npm install
-   ```
-   Este comando descargará todas las dependencias necesarias (React, Tailwind, etc.)
+2. **Install dependencies**
+cd merchant-retry-dashboard
+npm install
+This will download all required dependencies (React, Tailwind, etc.)
 
-3. **Ejecutar en modo desarrollo**
-   ```bash
-   npm run dev
-   ```
-   La aplicación se abrirá en `http://localhost:5173/` (o el puerto que muestre la consola)
+3. **Run in development mode**
 
-4. **Build para producción (opcional)**
-   ```bash
-   npm run build
-   ```
-   Esto genera una carpeta `dist` con archivos estáticos listos para producción
+npm run dev
 
-## 📦 ¿Qué archivos son necesarios?
+The app will open at `http://localhost:5173/` (or the port displayed in the console)
 
-### ✅ Incluir:
-- `src/` - Código fuente
-- `public/` - Archivos públicos
+4. **Production build (optional)**
+
+npm run build
+
+This generates a `dist` folder with optimized static files ready for deployment.
+
+## 📦 Required Files
+
+### ✅ Include:
+- `src/` — Source code
+- `public/` — Public assets
 - `index.html`
-- `package.json` - Lista de dependencias
-- `package-lock.json` - Versiones exactas
-- `vite.config.js` - Configuración de Vite
-- `tailwind.config.js` - Configuración de Tailwind
-- `postcss.config.js` - Configuración de PostCSS
-- `README.md` - Este archivo
+- `package.json` — Dependency list
+- `package-lock.json` — Exact dependency versions
+- `vite.config.js` — Vite configuration
+- `tailwind.config.js` — Tailwind configuration
+- `postcss.config.js` — PostCSS configuration
+- `README.md` — This file
 
-### ❌ Excluir (se regeneran):
-- `node_modules/` - Dependencias (muy pesado, ~200MB)
-- `dist/` - Build de producción
-- `.vite/` - Caché de Vite
+### ❌ Exclude (automatically generated):
+- `node_modules/` — Dependencies (~200MB)
+- `dist/` — Production build
+- `.vite/` — Vite cache
 
-## 🛠️ Comandos Disponibles
+## 🛠️ Available Commands
 
-- `npm run dev` - Inicia servidor de desarrollo
-- `npm run build` - Crea build de producción
-- `npm run preview` - Vista previa del build de producción
+- `npm run dev` — Start development server
+- `npm run build` — Generate production build
+- `npm run preview` — Preview production build locally
 
-## 📝 Características
+## 📝 Features
 
-- ✨ Configuración visual de reglas de reintento
-- 📊 Simulación de impacto en tiempo real
-- 🎨 Diseño moderno con Tailwind CSS
-- 📱 Totalmente responsive
-- 🤖 Insights AI para optimización
+- Visual configuration of payment retry rules
+- Real-time impact simulation
+- Modern UI with Tailwind CSS
+- Fully responsive design
+- AI insights for optimization
 
-## 🔧 Tecnologías
+## 🔧 Technologies Used
 
 - React 18
 - Vite
 - Tailwind CSS 3.4
-- Lucide React (iconos)
+- Lucide React (icons)
 
-## 💡 Solución de Problemas
+## 💡 Troubleshooting
 
-**Error al instalar:**
-- Verifica que Node.js esté instalado: `node --version`
-- Elimina `node_modules` y `package-lock.json`, luego ejecuta `npm install` de nuevo
+**Installation issues:**
+- Verify Node.js installation:
 
-**Puerto en uso:**
-- Vite buscará automáticamente otro puerto disponible
-- O puedes cerrar el proceso que usa el puerto 5173
+node --version
 
-**Estilos no se aplican:**
-- Verifica que Tailwind CSS v3.4 esté instalado
-- Refresca el navegador con Ctrl+Shift+R
+- Delete `node_modules` and `package-lock.json`, then reinstall:
+
+npm install
+
+
+**Port already in use:**
+- Vite will automatically choose another available port
+- Or close the process using port 5173 manually
+
+**Styles not applying:**
+- Ensure Tailwind CSS v3.4 is installed
+- Refresh the browser with Ctrl+Shift+R
